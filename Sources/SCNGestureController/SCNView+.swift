@@ -48,4 +48,8 @@ extension SCNView {
     public func onLongPress(_ action: @escaping (SCNLongPressGesture) -> Void) {
         SCNGestureController.shared.longPressGestureController.addAction(action: action)
     }
+    
+    public func onPinch(_ action: @escaping (SCNPinchGesture) -> Void) {
+        SCNGestureController.shared.pinchGestureController.addAction(action: action)
+    }
 }

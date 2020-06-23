@@ -24,4 +24,8 @@ extension SCNNode {
     public func onLongPress(_ action: @escaping (SCNLongPressGesture) -> Void) {
         SCNGestureController.shared.longPressGestureController.addAction(scnNode: self, action: action)
     }
+    
+    public func onPinch(_ action: @escaping (SCNPinchGesture) -> Void) {
+        SCNGestureController.shared.pinchGestureController.addAction(scnNode: self, action: action)
+    }
 }

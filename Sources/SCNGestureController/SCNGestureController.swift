@@ -15,6 +15,7 @@ public class SCNGestureController {
     public lazy var rotationGestureController = SCNRotationGestureController()
     public lazy var panGestureController = SCNPanGestureController()
     public lazy var longPressGestureController = SCNLongPressGestureController()
+    public lazy var pinchGestureController = SCNPinchGestureController()
     
     private init() {}
     
@@ -23,5 +24,6 @@ public class SCNGestureController {
         rotationGestureController.targetView = targetView
         panGestureController.targetView = targetView
         longPressGestureController.targetView = targetView
+        pinchGestureController.targetView = targetView
     }
 }
