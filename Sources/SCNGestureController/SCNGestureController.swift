@@ -11,10 +11,10 @@ import SceneKit
 public class SCNGestureController {
     public static let shared = SCNGestureController()
     
-    private(set) lazy var tapGestureController = SCNTapGestureController()
-    private(set) lazy var rotationGestureController = SCNRotationGestureController()
-    private(set) lazy var panGestureController = SCNPanGestureController()
-    private(set) lazy var longPressGestureController = SCNLongPressGestureController()
+    public lazy var tapGestureController = SCNTapGestureController()
+    public lazy var rotationGestureController = SCNRotationGestureController()
+    public lazy var panGestureController = SCNPanGestureController()
+    public lazy var longPressGestureController = SCNLongPressGestureController()
     
     private init() {}
     
