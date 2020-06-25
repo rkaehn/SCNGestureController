@@ -26,7 +26,7 @@ public class SCNPinchGestureController: UniversalPinchGestureHandler {
         let state = gesture.state
         
         #if os(macOS)
-        let scale = 1.0 + gesture.magnification
+        let scale = gesture.magnification > 0 ? gesture.magnification + 1 : 1 / abs(gesture.magnification - 1)
         #else
         let scale = gesture.scale
         #endif
