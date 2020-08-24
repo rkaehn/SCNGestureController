@@ -14,7 +14,7 @@ These instructions will get you up and running in no time!
 
 * [Swift Package Manager (SPM)](https://github.com/apple/swift-package-manager)
 
-### 💻 Installing
+### 💻 Installation
 
 This package is available for iOS 12 or newer and macOS 10.13 or newer and can be installed easily via Swift Package Manager.
 
